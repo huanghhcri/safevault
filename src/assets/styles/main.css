@@ -29,6 +29,9 @@
   --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06);
   --shadow-float: 0 4px 16px rgba(0, 0, 0, 0.1);
   --shadow-dropdown: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --on-accent: #ffffff;
+  --scrollbar-thumb: #c4c4c4;
+  --scrollbar-thumb-hover: #a3a3a3;
 }
 
 html.dark {
@@ -38,8 +41,14 @@ html.dark {
   --fg-secondary: #9ca3af;
   --accent: #6b7ae0;
   --accent-hover: #5e6ad2;
+  --accent-light: #1c1f3a;
   --border: #2a2a2e;
   --border-hover: #3a3a3e;
+  --border-soft: #1c1c1f;
+  --muted: #6b7280;
+  --on-accent: #ffffff;
+  --scrollbar-thumb: #4b4b4f;
+  --scrollbar-thumb-hover: #5f5f64;
 }
 
 *,
@@ -85,27 +94,15 @@ select {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c4c4c4;
+  background: var(--scrollbar-thumb);
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a3a3a3;
-}
-
-html.dark ::-webkit-scrollbar-thumb {
-  background: #4b4b4f;
-}
-
-html.dark ::-webkit-scrollbar-thumb:hover {
-  background: #5f5f64;
+  background: var(--scrollbar-thumb-hover);
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #c4c4c4 transparent;
-}
-
-html.dark * {
-  scrollbar-color: #4b4b4f transparent;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
 }

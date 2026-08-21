@@ -38,3 +38,7 @@ AGENTS.md
 .windsurfrules
 .continue/
 *.mdc
+
+# Local recovery scratch (do not publish)
+.restore_cache/
+.restore_final/

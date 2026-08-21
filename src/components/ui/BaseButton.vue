@@ -31,12 +31,12 @@ const classes = computed(() => {
 
   const variants = {
     primary:
-      "bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] shadow-sm",
+      "bg-[var(--accent)] text-[var(--on-accent)] hover:bg-[var(--accent-hover)] shadow-sm",
     secondary:
       "bg-[var(--surface)] text-[var(--fg)] border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--bg)]",
     ghost:
       "bg-transparent text-[var(--fg-secondary)] hover:bg-[var(--bg)] hover:text-[var(--fg)]",
-    danger: "bg-[var(--danger)] text-white hover:opacity-90 shadow-sm",
+    danger: "bg-[var(--danger)] text-[var(--on-accent)] hover:opacity-90 shadow-sm",
   };
 
   return [base, sizes[props.size], variants[props.variant]].join(" ");
