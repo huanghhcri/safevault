@@ -6,14 +6,6 @@
   "permissions": [
     "core:default",
     "opener:default",
-    "allow-vault-status",
-    "allow-vault-setup",
-    "allow-vault-unlock",
-    "allow-vault-lock",
-    "allow-list-credentials",
-    "allow-get-credential",
-    "allow-create-credential",
-    "allow-update-credential",
-    "allow-delete-credential"
+    "vault"
   ]
 }
