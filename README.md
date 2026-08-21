@@ -2,6 +2,22 @@
 
 本地优先的加密密码管理器，使用 AES-256-GCM 加密存储所有凭证。
 
+## 下载
+
+正式安装包发布在 GitHub Releases：
+
+**https://github.com/huanghhcri/safevault/releases**
+
+选择对应系统的文件安装即可：
+
+| 系统 | 文件 |
+|------|------|
+| Windows | `.msi` / `.exe` |
+| macOS | `.dmg` |
+| Linux | `.AppImage` / `.deb` |
+
+若 Releases 页面尚无安装包，说明正在构建中，稍等几分钟刷新即可。
+
 ## 功能
 
 - 🔐 AES-256-GCM 加密，PBKDF2-HMAC-SHA256 密钥派生（210,000 次迭代）
@@ -32,6 +48,8 @@ pnpm tauri dev    # 桌面应用模式（需 Rust 环境）
 ```bash
 pnpm tauri build  # 构建桌面安装包
 ```
+
+推送形如 `v1.0.0` 的 tag 会触发 GitHub Actions，自动构建并上传到 Releases。
 
 ## 安全说明
 
