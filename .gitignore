@@ -42,3 +42,9 @@ AGENTS.md
 # Local recovery scratch (do not publish)
 .restore_cache/
 .restore_final/
+
+# Local CI debug logs
+_job.*
+_fail.log
+_joblogs/
+
