@@ -6,22 +6,14 @@
   "permissions": [
     "core:default",
     "opener:default",
-    {
-      "identifier": "safevault-vault-allow",
-      "description": "Allow vault encryption and credential commands",
-      "commands": {
-        "allow": [
-          "vault_status",
-          "vault_setup",
-          "vault_unlock",
-          "vault_lock",
-          "list_credentials",
-          "get_credential",
-          "create_credential",
-          "update_credential",
-          "delete_credential"
-        ]
-      }
-    }
+    "allow-vault-status",
+    "allow-vault-setup",
+    "allow-vault-unlock",
+    "allow-vault-lock",
+    "allow-list-credentials",
+    "allow-get-credential",
+    "allow-create-credential",
+    "allow-update-credential",
+    "allow-delete-credential"
   ]
 }
